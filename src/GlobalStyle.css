@@ -1,0 +1,15 @@
+*{
+    font-family: "DM Sans";
+}
+
+.CardFooter:hover{
+    background-color: #DEF3FF;
+}
+
+.Card{
+   width: 398px ;
+   height: 356px;
+   margin-right: 24px;
+   border: 1px solid #b2d7ff !important;
+   border-radius: 16px !important;
+}
