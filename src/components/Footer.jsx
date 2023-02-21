@@ -21,7 +21,7 @@ export default function LargeWithLogoLeft() {
       color={'#fff'}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '1fr 1fr 1fr 1fr 1fr 1fr' }}
+          templateColumns={{md: '1fr 1fr 1fr 1fr 1fr 1fr', base: '1fr 1fr' }}
           spacing={8}
           py={10}
           fontFamily='inherit'
