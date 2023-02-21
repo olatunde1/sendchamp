@@ -3,10 +3,12 @@ import { ReactNode } from 'react';
 import {
   Box,
   Container,
+  Divider,
   Link,
   SimpleGrid,
   Stack,
   Text,
+  HStack,
   useColorModeValue,
 } from '@chakra-ui/react';
 
@@ -44,8 +46,9 @@ export default function LargeWithLogoLeft() {
       color={'#fff'}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '1fr 1fr 1fr 1fr 1fr 1fr' }}
-          spacing={8}>
+          templateColumns={{ sm: '1fr 1fr', md: '1fr 2fr 1fr 1fr 1fr 1fr' }}
+          spacing={8}
+          py={10}>
              <Stack align={'flex-start'}>
             <ListHeader>Product</ListHeader>
             <Link href={'#'}>Channels / Router</Link>
@@ -57,43 +60,60 @@ export default function LargeWithLogoLeft() {
             <ListHeader>Solutions</ListHeader>
             <Link href={'#'}>Onboard</Link>
             <Link href={'#'}>Engage</Link>
-            <Link href={'#'}>Tutorials</Link>
-            <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Releases</Link>
+            <Link href={'#'}>Support</Link>
+            <Link href={'#'}>Retain</Link>
+            
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Product</ListHeader>
-            <Link href={'#'}>Overview</Link>
-            <Link href={'#'}>Features</Link>
-            <Link href={'#'}>Tutorials</Link>
+            <ListHeader>Resources</ListHeader>
+            <Link href={'#'}>Developers</Link>
+            <Link href={'#'}>API Reference</Link>
+            <Link href={'#'}>Guides</Link>
+            <Link href={'#'}>SDKs/Libraries</Link>
+            <Link href={'#'}>Community</Link>
+            <Link href={'#'}>Status Page</Link>
             <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Releases</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Press</Link>
+            <Link href={'#'}>About Us</Link>
+            <Link href={'#'}>Our Stories</Link>
             <Link href={'#'}>Careers</Link>
             <Link href={'#'}>Contact</Link>
-            <Link href={'#'}>Partners</Link>
+            <Link href={'#'}>Terms Of Use</Link>
+            <Link href={'#'}>Privacy</Link>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Legal</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Status</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={'#'}>Facebook</Link>
+            <ListHeader>Follow us</ListHeader>
             <Link href={'#'}>Twitter</Link>
-            <Link href={'#'}>Dribbble</Link>
-            <Link href={'#'}>Instagram</Link>
             <Link href={'#'}>LinkedIn</Link>
+            <Link href={'#'}>Facebook</Link>
+            <Link href={'#'}>Instagram</Link>
+          </Stack>
+          <Stack align={'flex-start'}>
+            <ListHeader>Contact us</ListHeader>
+            <Link href={'#'}>+234(0)18880261</Link>
+            <Link href={'#'}>sales@sendchamp.com</Link>
+            <Link href={'#'}>help@sendchamp.com</Link>
           </Stack>
         </SimpleGrid>
+        <Divider />
+        <HStack spacing='24px'>
+            <Box w='40px' h='40px' bg='yellow.200'>
+               Logo 
+            </Box>
+            <Box w='40px' h='40px' bg='tomato' display={'flex'}>
+                <Text>Flag</Text>
+                <Text>142, Ahmadu Bello Way, Victoria Island,<br />
+                Lagos, Nigeria</Text>
+            </Box>
+            <Box w='40px' h='40px' bg='pink.100' display={'flex'}>
+                <Text>Flag</Text>
+                    <Text>2055 Limestone Rd STE 200-C Wilmington,<br />
+                        DE 19808</Text>
+            </Box>
+            </HStack>
+        <Divider />
       </Container>
     </Box>
   );
