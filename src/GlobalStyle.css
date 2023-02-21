@@ -11,6 +11,7 @@ body{
 }
 
 .Card{
+    max-width: 100% !important;
    width: 398px ;
    height: 356px;
    margin-bottom: 2rem;

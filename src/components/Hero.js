@@ -4,11 +4,18 @@ import './Hero.css'
 
 const Hero = () => {
   return (
-    <Box className='hero'  textAlign="center" fontSize="48px" paddingBottom={'6rem'} >
+    <Box className='hero'  textAlign="center" fontSize="48px" paddingBottom={'6rem'} paddingTop='96px' >
         <Container>
-        <Text  fontSize='48px' fontWeight='600' fontFamily={'HafferXH,sans-serif'}>Pricing for every business</Text>
-        <Text fontSize='18px' >No hidden fees or charges - simple & flexible pricing that fits with your <br /> business at any stage.</Text>
-        <Box display={'flex'} textAlign='center' justifyContent={'center'} margin='0 auto'>
+        <Text  
+        fontSize='48px'
+        fontWeight='500'
+        fontFamily={'HafferXH,sans-serif'}
+        fontStyle='normal'
+        paddingBottom={'32px'}>
+          Pricing for every business
+        </Text>
+        <Text fontSize='18px' paddingBottom={'64px'} >No hidden fees or charges - simple & flexible pricing that fits with your <br /> business at any stage.</Text>
+        <Box display={{base: 'block' ,md:'flex'}} placeContent='center' textAlign='center' justifyContent={'center'} margin='0 10%' >
 
             <Select
            
@@ -17,7 +24,18 @@ const Hero = () => {
              placeholder='Nigeria'
              bgColor='#ffffff'
              borderRadius='18px'
-             marginRight={'16px'}>
+             marginRight={'16px'}
+             fontSize='20px'
+             inputMode='text'
+             >
+                <option>Nigeria</option>
+                <option>Nigeria</option>
+                <option>Nigeria</option>
+                <option>Nigeria</option>
+                <option>Nigeria</option>
+                <option>Nigeria</option>
+                <option>Nigeria</option>
+                <option>Nigeria</option>
                 <option>Nigeria</option>
             </Select>
             <Select
