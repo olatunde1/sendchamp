@@ -81,16 +81,6 @@ const CardPage = () => {
               <Text fontSize={'16px'} marginTop='24px'>Price Per Mail</Text>
               <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 0.5500</span> /email</Text>
             </Box>
-            {/* <Box>
-              <Text  fontSize={'16px'}>To Receive SMS</Text>
-              <Text bgColor={'#EDF5FE'} color='#2F8EFF' textAlign={'center'}
-              marginTop='8px'
-              padding='2px'
-              borderRadius={'12px'}
-              fontSize='12px'
-              fontFamily={'"DM Sans"'}
-              >Coming Soon</Text>
-            </Box> */}
           </Box>
         </CardBody>
       </Card>

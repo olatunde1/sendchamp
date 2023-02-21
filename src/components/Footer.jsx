@@ -105,22 +105,25 @@ export default function LargeWithLogoLeft() {
           </Stack>
         </SimpleGrid>
         <Divider />
-        <HStack spacing='24px' paddingBottom={'49px'} paddingTop={'49px'}   padding={'49px 2%'}>
-            <Image src={sendChamp} w='227px' h='48px' marginRight={'101px'}  />
+        <HStack display={{md:'flex', base:'grid'}} textAlign={{md:'start', base:'center'}} spacing='24px' paddingBottom={'49px'} paddingTop={'49px'} padding={'49px 1%'}>
+            <Image src={sendChamp} w='227px' h='48px' marginRight={{md:'101px', base:'0 auto'}} margin={{base:'0 auto'}}  />
                
             <Box  h='48px'  display={'flex'}>
-                <Image w={'40px'} marginRight={'16px'} src={nigeria}/>
-                <Text>142, Ahmadu Bello Way, Victoria Island,<br />
+                <Image w={'40px'} marginRight={'16px'} src={nigeria} display={{md:'flex', base:'none'}}/>
+                <Text fontSize={{base:'18px'}}>142, Ahmadu Bello Way, Victoria Island,<br />
                 Lagos, Nigeria</Text>
             </Box>
-            <Box  h='48px'  display={'flex'}>
-            <Image w={'40px'} marginRight={'16px'} src={usa}/>
-                    <Text>2055 Limestone Rd STE 200-C Wilmington,<br />
+            <Box  h='48px'  display={'flex'} paddingTop={{md:'0', base:'32px'}} paddingBottom={{md:'0', base:'32px'}}>
+            <Image w={'40px'} marginRight={'16px'} src={usa}  display={{md:'flex', base:'none'}} />
+                    <Text fontSize={{base:'17px'}}>2055 Limestone Rd STE 200-C Wilmington,<br />
                       DE 19808
                     </Text>
             </Box>
         </HStack>
         <Divider />
+        <Box>
+          <Text textAlign={{md:'0', base:'center'}} color={'#909FA7'}  padding={{md:'0', base:'18px 4%'}}>Built with ❤️ at Sendchamp Inc. - © 2023 | All rights reserved</Text>
+        </Box>
       </Container>
     </Box>
   );
