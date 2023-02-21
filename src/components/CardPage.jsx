@@ -14,21 +14,23 @@ const theme = extendTheme({ breakpoints })
 
 const CardPage = () => {
   return (
-   <Center>
-       <SimpleGrid spacing={4} templateColumns='repeat(3, 1fr)' gap={6} display={{md:'grid'}}>
-      <Card className='Card'>
+    <Container>
+      <Center>
+      <SimpleGrid className='cardPage' templateColumns='repeat(3, 1fr)' gap={6} display={{md:'grid'}}
+       >
+      <Card className='Card' >
         <CardHeader>
-          <Image width={'64px'} height={'64px'} src={one}/>
+          <Image padding={'0'} width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
-        <CardBody>
+        <CardBody  paddingLeft={'40px'} paddingRight={'24px'}>
           <Text fontSize={'20px'} fontWeight={'600'} marginTop='1px'>SMS</Text>
           <Box display={'flex'} justifyContent='space-between'>
             <Box>
               <Text fontSize={'16px'} marginTop='24px'>To Send SMS</Text>
-              <Text  fontSize={'16px'} marginTop='11px'>NGN 2.4255/sms</Text>
+              <Text  fontSize={'16px'} marginTop='11px'><span>NGN 2.4255</span>/sms</Text>
             </Box>
             <Box>
-              <Text  fontSize={'16px'}>To Receive SMS</Text>
+              <Text  fontSize={'16px'} paddingTop='22px'>To Receive SMS</Text>
               <Text bgColor={'#EDF5FE'} color='#2F8EFF' textAlign={'center'}
               marginTop='8px'
               padding='2px'
@@ -48,15 +50,15 @@ const CardPage = () => {
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
-        <CardBody>
+        <CardBody  paddingLeft={'40px'} paddingRight={'24px'}>
           <Text fontSize={'20px'} fontWeight={'600'} marginTop='1px'>Voice</Text>
           <Box display={'flex'} justifyContent='space-between'>
             <Box>
               <Text fontSize={'16px'} marginTop='24px'>To make Calls</Text>
-              <Text  fontSize={'16px'} marginTop='11px'>NGN 66.0000/sec</Text>
+              <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 66.0000</span> /sec</Text>
             </Box>
             <Box>
-              <Text  fontSize={'16px'}>To Receive Calls</Text>
+              <Text  fontSize={'16px'} paddingTop='22px'>To Receive Calls</Text>
               <Text bgColor={'#EDF5FE'} color='#2F8EFF' textAlign={'center'}
               marginTop='8px'
               padding='2px'
@@ -72,12 +74,12 @@ const CardPage = () => {
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
-        <CardBody>
+        <CardBody  paddingLeft={'40px'} paddingRight={'24px'}>
           <Text fontSize={'20px'} fontWeight={'600'} marginTop='1px'>Email</Text>
           <Box display={'flex'} justifyContent='space-between'>
             <Box>
               <Text fontSize={'16px'} marginTop='24px'>Price Per Mail</Text>
-              <Text  fontSize={'16px'} marginTop='11px'>NGN 0.5500/email</Text>
+              <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 0.5500</span> /email</Text>
             </Box>
             {/* <Box>
               <Text  fontSize={'16px'}>To Receive SMS</Text>
@@ -91,25 +93,21 @@ const CardPage = () => {
             </Box> */}
           </Box>
         </CardBody>
-        <Divider color={' #97d1f3'} />
-        <CardFooter className='CardFooter' justify={'center'} >
-          <Text  fontSize={'20px'} textDecorationLine='underline' color={'#0555A8'} fontFamily='HafferXH,sans-serif'>More details</Text>
-        </CardFooter>
       </Card>
       <Card className='Card'>
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
-        <CardBody>
+        <CardBody  paddingLeft={'40px'} paddingRight={'24px'}>
           <Text fontSize={'20px'} fontWeight={'600'} marginTop='1px'>Whatsapp</Text>
           <Box display={'flex'} justifyContent='space-between'>
             <Box>
               <Text fontSize={'16px'} marginTop='24px'>To Send Message</Text>
-              <Text  fontSize={'16px'} marginTop='11px'>NGN 2.7500/msg</Text>
+              <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 2.7500</span> /msg</Text>
             </Box>
             <Box>
-              <Text  fontSize={'16px'}>To Receive Message</Text>
-              <Text bgColor={'#EDF5FE'} color='#2F8EFF' textAlign={'center'}
+              <Text  fontSize={'16px'} paddingTop='22px'>To Receive Message</Text>
+              <Text  textAlign={'center'}
               marginTop='8px'
               padding='2px'
               borderRadius={'12px'}
@@ -128,12 +126,12 @@ const CardPage = () => {
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
-        <CardBody>
+        <CardBody  paddingLeft={'40px'} paddingRight={'24px'}>
           <Text fontSize={'20px'} fontWeight={'600'} marginTop='1px'>Verification</Text>
           <Box display={'flex'} justifyContent='space-between'>
             <Box>
               <Text fontSize={'16px'} marginTop='24px'>To Send OTP</Text>
-              <Text  fontSize={'16px'} marginTop='11px'>NGN 0.0000/OTP</Text>
+              <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 0.0000</span>/OTP</Text>
             </Box>
             <Box>
               <Text  fontSize={'16px'}>To Confirm OTP</Text>
@@ -149,8 +147,10 @@ const CardPage = () => {
         </CardBody>
         
       </Card>
-  </SimpleGrid>
-   </Center>
+       </SimpleGrid>
+      </Center>
+    </Container>
+      
   )
 }
 

@@ -1,15 +1,30 @@
 *{
     font-family: "DM Sans";
 }
+body{
+    scroll-behavior: smooth;
+}
 
-.CardFooter:hover{
-    background-color: #DEF3FF;
+.CardFooter:hover,
+.startUp{
+    background-color: #EDF5FE;
 }
 
 .Card{
    width: 398px ;
    height: 356px;
-   margin-right: 24px;
+   margin-bottom: 2rem;
    border: 1px solid #b2d7ff !important;
    border-radius: 16px !important;
+   position: absolute;
+   bottom: 17%;
+}
+
+span{
+    font-weight: 700;
+}
+
+.cardPage{
+    position: relative;
+    padding-bottom: 80px ;
 }
