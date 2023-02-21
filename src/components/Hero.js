@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Text,Container } from '@chakra-ui/react'
-import Select from "react-select";
+import Select from 'react-select';
 import './Hero.css'
 
 
@@ -27,8 +27,6 @@ const CountrySelect = () => {
   );
 };
 
-
-
 const Hero = () => {
   return (
     <Box className='hero'  textAlign="center" fontSize="48px" paddingBottom={'6rem'} paddingTop='96px' >
@@ -43,11 +41,13 @@ const Hero = () => {
           Pricing for every business
         </Text>
         <Text fontSize={{md:'24px', base:'20px'}}  textAlign='center'  paddingBottom={'64px'} >No hidden fees or charges - simple & flexible pricing that fits with your business at any stage.</Text>
-        <Box display={{base: 'block' ,md:'flex'}} placeContent='center' textAlign='center' justifyContent={'center'} margin='0 10%' >
+        <Box   display={{ md:'flex',base: 'block'}} fontSize={{ md:'24px',base: '20px'}} placeContent='center' textAlign='center' justifyContent={'center'} margin='0 10%' >
           <CountrySelect />
+        
 
             <Select
-            width='182px'
+            
+           
             height='64px'
             bgColor='#ffffff'
             borderRadius='18px'

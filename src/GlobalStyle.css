@@ -29,3 +29,25 @@ span{
     position: relative;
     padding-bottom: 80px ;
 }
+
+.css-qbdosj-Input {
+    visibility: visible;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: inline-grid;
+    grid-area: 1/1/2/3;
+    grid-template-columns: 0 min-content;
+    margin: -18px;
+    padding-bottom: 7px;
+    padding-top: 2px;
+    color: hsl(0, 0%, 20%);
+    box-sizing: border-box;
+}
+
+.css-1bqoaab {
+    text-align: center;
+    padding-bottom: 6rem;
+    padding-top: 96px;
+}
+
