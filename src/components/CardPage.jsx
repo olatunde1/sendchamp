@@ -239,15 +239,7 @@ export default function CardPage () {
         footerPrize = "NGN 2.4255"
         footerStatus = "Coming Soon"
       />
-      <CustomModal
-        HeaderText="whatssap"
-        sendSms="To Send Message"
-        recieveSms="To Receive Message"
-        footerSendSms ="Start at"
-        footerPrize = "NGN 3.5000"
-        footerStatus = "NGN 0.0000/msg"
-        
-      />
+  
     </div>
   );
 }
