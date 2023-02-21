@@ -1,16 +1,6 @@
 import React from 'react'
-import { Box,Container,CardHeader,Card, CardBody, CardFooter,SimpleGrid,Heading,Text,Button,Image,Link, Center,Divider,extendTheme } from '@chakra-ui/react'
+import { Box,Container,CardHeader,Card, CardBody, CardFooter,SimpleGrid,Text,Image, Center,Divider } from '@chakra-ui/react'
 import one from './Images/pic.png'
-const breakpoints = {
-  sm: '320px',
-  md: '768px',
-  lg: '960px',
-  xl: '1200px',
-  '2xl': '1536px',
-}
-
-// 3. Extend the theme
-const theme = extendTheme({ breakpoints })
 
 const CardPage = () => {
   return (
