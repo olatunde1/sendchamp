@@ -12,13 +12,13 @@ body{
 
 .Card{
     max-width: 100% !important;
-   width: 398px ;
-   height: 356px;
-   margin-bottom: 2rem;
-   border: 1px solid #b2d7ff !important;
-   border-radius: 16px !important;
-   position: absolute;
-   bottom: 17%;
+    width: 398px ;
+    height: 356px;
+    margin-bottom: 2rem;
+    border: 1px solid #b2d7ff !important;
+    border-radius: 16px !important;
+    position: absolute;
+    bottom: 28%;
 }
 
 span{

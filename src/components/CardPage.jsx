@@ -6,9 +6,9 @@ const CardPage = () => {
   return (
     <Container>
       <Center>
-      <SimpleGrid className='cardPage' templateColumns='repeat(3, 1fr)' gap={6} display={{md:'grid'}}
+      <SimpleGrid marginTop={'60px'} className='cardPage' templateColumns='repeat(3, 1fr)' gap={6} display={{md:'grid'}}
        >
-      <Card className='Card' >
+      <Card className='Card' width={{md:'398px', base:'380px'}}margin={{md:'full', base:'0 auto'}} marginBottom={{base:'2rem'}} >
         <CardHeader>
           <Image padding={'0'} width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
@@ -20,7 +20,7 @@ const CardPage = () => {
               <Text  fontSize={'16px'} marginTop='11px'><span>NGN 2.4255</span>/sms</Text>
             </Box>
             <Box>
-              <Text  fontSize={'16px'} paddingTop='22px'>To Receive SMS</Text>
+              <Text  fontSize={'16px'} paddingTop='24px'>To Receive SMS</Text>
               <Text bgColor={'#EDF5FE'} color='#2F8EFF' textAlign={'center'}
               marginTop='8px'
               padding='2px'
@@ -36,7 +36,7 @@ const CardPage = () => {
           <Text  fontSize={'20px'} textDecorationLine='underline' color={'#0555A8'} fontFamily='HafferXH,sans-serif'>More details</Text>
         </CardFooter>
       </Card>
-      <Card className='Card'>
+      <Card  className='Card' width={{md:'398px', base:'380px'}}margin={{md:'full', base:'0 auto'}} marginBottom={{base:'2rem'}}>
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
@@ -48,7 +48,7 @@ const CardPage = () => {
               <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 66.0000</span> /sec</Text>
             </Box>
             <Box>
-              <Text  fontSize={'16px'} paddingTop='22px'>To Receive Calls</Text>
+              <Text  fontSize={'16px'} paddingTop='24px'>To Receive Calls</Text>
               <Text bgColor={'#EDF5FE'} color='#2F8EFF' textAlign={'center'}
               marginTop='8px'
               padding='2px'
@@ -60,7 +60,7 @@ const CardPage = () => {
           </Box>
         </CardBody>
       </Card>
-      <Card className='Card'>
+      <Card  className='Card' width={{md:'398px', base:'380px'}}margin={{md:'full', base:'0 auto'}} marginBottom={{base:'2rem'}}>
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
@@ -74,7 +74,7 @@ const CardPage = () => {
           </Box>
         </CardBody>
       </Card>
-      <Card className='Card'>
+      <Card  className='Card' width={{md:'398px', base:'380px'}}margin={{md:'full', base:'0 auto'}} marginBottom={{base:'2rem'}}>
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
@@ -86,7 +86,7 @@ const CardPage = () => {
               <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 2.7500</span> /msg</Text>
             </Box>
             <Box>
-              <Text  fontSize={'16px'} paddingTop='22px'>To Receive Message</Text>
+              <Text  fontSize={'16px'} paddingTop='24px'>To Receive Message</Text>
               <Text  textAlign={'center'}
               marginTop='8px'
               padding='2px'
@@ -102,7 +102,7 @@ const CardPage = () => {
           <Text  fontSize={'20px'} textDecorationLine='underline' color={'#0555A8'} fontFamily='HafferXH,sans-serif'>More details</Text>
         </CardFooter>
       </Card>
-      <Card className='Card'>
+      <Card  className='Card' width={{md:'398px', base:'380px'}}margin={{md:'full', base:'0 auto'}} >
         <CardHeader>
           <Image width={'64px'} height={'64px'} src={one}/>
         </CardHeader>
@@ -114,7 +114,7 @@ const CardPage = () => {
               <Text  fontSize={'16px'} marginTop='11px'> <span>NGN 0.0000</span>/OTP</Text>
             </Box>
             <Box>
-              <Text  fontSize={'16px'}>To Confirm OTP</Text>
+              <Text  fontSize={'16px'} paddingTop='24px'>To Confirm OTP</Text>
               <Text  textAlign={'center'}
               marginTop='8px'
               padding='2px'
