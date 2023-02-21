@@ -169,7 +169,7 @@ export default function CardPage () {
             <Image padding={'0'} width={'54px'} height={'44px'} src={one}/>
             <Text>SMS</Text>
           </ModalHeader>
-          <ModalCloseButton />
+          <ModalCloseButton border={'2px solid #0555A8'} />
           <Divider color={' #05334f'} />
           <ModalBody display={'flex'} justifyContent='space-between' paddingTop={'34px'}>
             <Text>To Send Message</Text>
