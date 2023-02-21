@@ -13,9 +13,8 @@ import { Box,Container,CardHeader,Card, CardBody, CardFooter,SimpleGrid,Text,Ima
 } from '@chakra-ui/react'
 import one from './Images/pic.png'
 
-export default function CardPage () {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-
+const CustomModal = ({ HeaderText, sendSms, recieveSms, footerSendSms,footerPrize,footerStatus }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   
   return (
     <Container>
@@ -61,19 +60,19 @@ export default function CardPage () {
         <ModalContent borderRadius={'16px'}>
           <ModalHeader display={'flex'} textAlign='center' justifyItems={'center'}>
             <Image padding={'0'} width={'54px'} height={'44px'} src={one}/>
-            <Text>SMS</Text>
+            <Text>{HeaderText}</Text>
           </ModalHeader>
           <ModalCloseButton />
           <Divider color={' #05334f'} />
           <ModalBody display={'flex'} justifyContent='space-between' paddingTop={'34px'}>
-            <Text>To Send SMS</Text>
-            <Text>To Receive SMS</Text>
+            <Text>{sendSms}</Text>
+            <Text>{recieveSms}</Text>
 
           </ModalBody>
           <ModalFooter display={'flex'} justifyContent='space-between' backgroundColor={'#EFF4FE'} margin='20px'>
             <Box>
-              <Text fontSize={'16px'} paddingTop='8px'>To Send SMS</Text>
-              <Text  fontSize={'16px'} marginTop='11px'><span>NGN 2.4255</span>/sms</Text>
+              <Text fontSize={'16px'} paddingTop='8px'>{footerSendSms}</Text>
+              <Text  fontSize={'16px'} marginTop='11px'><span>{footerPrize}</span>/sms</Text>
             </Box>
             <Text bgColor={'#EDF5FE'} color='#EFF4FE' textAlign={'center'}
               marginTop='8px'
@@ -85,7 +84,7 @@ export default function CardPage () {
               fontSize='12px'
               fontFamily={'"DM Sans"'}
               backgroundColor='#97d1f3'
-              >Coming Soon</Text>
+              >{footerStatus}</Text>
           </ModalFooter>
         </ModalContent>
         </Modal>
@@ -167,31 +166,31 @@ export default function CardPage () {
         <ModalContent borderRadius={'16px'}>
           <ModalHeader display={'flex'} textAlign='center' justifyItems={'center'}>
             <Image padding={'0'} width={'54px'} height={'44px'} src={one}/>
-            <Text>SMS</Text>
+            <Text>{HeaderText}</Text>
           </ModalHeader>
-          <ModalCloseButton border={'2px solid #0555A8'} />
+          <ModalCloseButton />
           <Divider color={' #05334f'} />
           <ModalBody display={'flex'} justifyContent='space-between' paddingTop={'34px'}>
-            <Text>To Send Message</Text>
-            <Text>To Receive Message</Text>
+            <Text>{sendSms}</Text>
+            <Text>{recieveSms}</Text>
 
           </ModalBody>
           <ModalFooter display={'flex'} justifyContent='space-between' backgroundColor={'#EFF4FE'} margin='20px'>
             <Box>
-              <Text fontSize={'16px'} paddingTop='8px'>Start at</Text>
-              <Text  fontSize={'16px'} marginTop='11px'><span>NGN 3.5000/msg</span>/sms</Text>
+              <Text fontSize={'16px'} paddingTop='8px'>{footerSendSms}</Text>
+              <Text  fontSize={'16px'} marginTop='11px'><span>{footerPrize}</span>/sms</Text>
             </Box>
-            <Text bgColor={'#EDF5FE'}  textAlign={'center'}
+            <Text bgColor={'#EDF5FE'} color='#EFF4FE' textAlign={'center'}
               marginTop='8px'
               paddingBottom={'4px'}
               paddingTop={'4px'}
               paddingLeft={'12px'}
-              paddingRight={'0px'}
+              paddingRight={'12px'}
               borderRadius={'12px'}
-              fontSize='16px'
+              fontSize='12px'
               fontFamily={'"DM Sans"'}
-              fontWeight='bold'
-              >NGN 0.0000/msg</Text>
+              backgroundColor='#97d1f3'
+              >{footerStatus}</Text>
           </ModalFooter>
         </ModalContent>
         </Modal>
@@ -221,11 +220,35 @@ export default function CardPage () {
         </CardBody>
         
       </Card>
+      
        </SimpleGrid>
       </Center>
     </Container>
       
-  )
-}
+  );
+};
 
+export default function CardPage () {
+  return (
+    <div className="CardPage">
+      <CustomModal
+        HeaderText="SMS"
+        sendSms="To Send SMS"
+        recieveSms="To Receive SMS"
+        footerSendSms ="To Send SMS"
+        footerPrize = "NGN 2.4255"
+        footerStatus = "Coming Soon"
+      />
+      <CustomModal
+        HeaderText="whatssap"
+        sendSms="To Send Message"
+        recieveSms="To Receive Message"
+        footerSendSms ="Start at"
+        footerPrize = "NGN 3.5000"
+        footerStatus = "NGN 0.0000/msg"
+        
+      />
+    </div>
+  );
+}
 
