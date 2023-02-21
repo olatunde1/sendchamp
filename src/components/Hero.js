@@ -7,9 +7,10 @@ const Hero = () => {
     <Box className='hero'  textAlign="center" fontSize="48px" paddingBottom={'6rem'} paddingTop='96px' >
         <Container>
         <Text  
-        fontSize='48px'
-        fontWeight='500'
-        fontFamily={'HafferXH,sans-serif'}
+        fontSize={{md:'48px', base:'32px'}}
+        fontWeight='600'
+        lineHeight={{base: '36px'}}
+        fontFamily={'HafferXH,sans-serif '}
         fontStyle='normal'
         paddingBottom={'32px'}>
           Pricing for every business
