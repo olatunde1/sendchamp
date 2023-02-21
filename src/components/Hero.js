@@ -41,7 +41,7 @@ const Hero = () => {
           Pricing for every business
         </Text>
         <Text fontSize={{md:'24px', base:'20px'}}  textAlign='center'  paddingBottom={'64px'} >No hidden fees or charges - simple & flexible pricing that fits with your business at any stage.</Text>
-        <Box   display={{ md:'flex',base: 'block'}} fontSize={{ md:'24px',base: '20px'}} placeContent='center' textAlign='center' justifyContent={'center'} margin='0 10%' >
+        <Box   display={{ md:'flex',base: 'block'}} fontSize={{ md:'24px',base: '20px'}}  placeContent='center' textAlign='center' justifyContent={'center'} margin='0 1%' >
           <CountrySelect />
         
 
