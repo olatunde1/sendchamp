@@ -7,7 +7,7 @@ const Hero = () => {
     <Box className='hero'  textAlign="center" fontSize="48px" paddingBottom={'6rem'} paddingTop='96px' >
         <Container>
         <Text  
-        fontSize={{md:'48px', base:'32px'}}
+        fontSize={{md:'48px', base:'34px'}}
         fontWeight='600'
         lineHeight={{base: '36px'}}
         fontFamily={'HafferXH,sans-serif '}
@@ -15,7 +15,7 @@ const Hero = () => {
         paddingBottom={'32px'}>
           Pricing for every business
         </Text>
-        <Text fontSize='18px' paddingBottom={'64px'} >No hidden fees or charges - simple & flexible pricing that fits with your <br /> business at any stage.</Text>
+        <Text fontSize={{md:'24px', base:'20px'}}  textAlign='center'  paddingBottom={'64px'} >No hidden fees or charges - simple & flexible pricing that fits with your business at any stage.</Text>
         <Box display={{base: 'block' ,md:'flex'}} placeContent='center' textAlign='center' justifyContent={'center'} margin='0 10%' >
 
             <Select
