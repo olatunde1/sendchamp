@@ -52,13 +52,13 @@ const Hero = () => {
         
 
             <Select
-            
-           
+
             height='64px'
             bgColor='#ffffff'
             borderRadius='18px'
             placeholder='NGN'>
                     <option>Nigeria</option>
+                    
             </Select>
            
 

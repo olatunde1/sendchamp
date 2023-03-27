@@ -3,6 +3,7 @@
 }
 body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .CardFooter:hover,
